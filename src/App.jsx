@@ -1,27 +1,28 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+   const [joke, setJoke] = useState({});
+   const getJoke = async () => {
+      const jokeData = await fetch(
+         "https://v2.jokeapi.dev/joke/Dark?type=twopart"
+      )
+         .then((res) => res.json())
+         .catch((err) => console.log("Roblox"));
+      const { setup, delivery } = jokeData;
+      setJoke({ setup, delivery });
+   };
 
-  return (
-    <>
-      <div>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+   return (
+      <>
+      <h1>Placeholder for glacies.store</h1>
+         <div className="main">
+            <button onClick={getJoke}>get a joke</button>
+            <p>{joke ? joke.setup : ``}</p>
+            <p>{joke ? joke.delivery : ``}</p>
+         </div>
+      </>
+   );
 }
 
-export default App
+export default App;
