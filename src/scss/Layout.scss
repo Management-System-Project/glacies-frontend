@@ -1,0 +1,48 @@
+html {
+   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+html,
+body {
+   height: 100%;
+}
+
+ul li {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+   color: #055a9b;
+}
+a:hover {
+   color: #033255;
+}
+
+:root {
+   font-family: sans-serif;
+   font-size: 16px;
+}
+#root {
+   height: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.header {
+   display: flex;
+   padding: 15px;
+   justify-content: space-between;
+
+   ul {
+      display: flex;
+      gap: 1rem;
+   }
+}
+
