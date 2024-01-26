@@ -1,0 +1,24 @@
+*:has(> .edit-btn, > .edit-photo) {
+   position: relative;
+}
+.edit-btn {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.edit-photo {
+   background-color: rgba(0,0,0,0.25);
+   position: absolute;
+   bottom: 0;
+   transform: translate(0,100%);
+   transition: all 0.15s ease;
+   cursor: pointer;
+   svg {
+      height: 3em;
+   }
+}
+
+*:has(> .edit-photo):hover > .edit-photo{
+   transform: translate(0,0);
+}
