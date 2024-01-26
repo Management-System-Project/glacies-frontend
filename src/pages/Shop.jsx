@@ -64,7 +64,7 @@ function Shop() {
 
 function Photo({auth}) {
    const [photoSrc, setPhotoSrc] = useState(
-      "https://i.pinimg.com/564x/bf/3b/bb/bf3bbb71ceb2aeefc3e6091439e35212.jpg"
+      "https://pbs.twimg.com/media/GAcYptGaAAAru6o?format=jpg&name=small"
    );
    return (
       <div className="photo">

@@ -37,7 +37,7 @@ function Layout() {
                      <NavIcon to="/" src={icons.cart} />
                   </li> */}
                   <li>
-                     <NavIcon to="/" src={icons.account} />
+                     <NavIcon to="/reg-user" src={icons.account} />
                   </li>
                </ul>
             </nav>
@@ -45,13 +45,13 @@ function Layout() {
          <aside className={`aside ${sideMenu && "--active"}`}>
             <ul className="icons-list">
                <li>
-                  <NavIcon to="/shop" src={icons.plus} />
+                  <NavIcon to="/reg-shop" src={icons.plus} />
                </li>
                <li>
                   <NavIcon to="" src={icons.discount} />
                </li>
                <li>
-                  <NavIcon to="" src={icons.shop} />
+                  <NavIcon to="/shop" src={icons.shop} />
                </li>
                <li>
                   <NavIcon to="" src={icons.contacts} />

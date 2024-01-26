@@ -1,0 +1,41 @@
+.reg-user{
+   color: var(--dark-blue-text);
+   nav {
+      margin: 2rem 0 0;
+      display: flex;
+      justify-content: center;
+      gap:4rem;
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   .form {
+      margin: 6rem 10rem;
+      width: min(400px, 100%);
+      font-size: 1.5rem;
+      & > *:not(:first-child){
+         margin:1.25rem 0 0 0;
+      }
+      label {
+         color: var(--ultra-dark-blue);
+      }
+      input:not([type="submit"]){
+         display: block;
+         border: 2px solid var(--ultra-dark-blue);
+         border-radius: 10px;
+         padding: 0.5rem 0.75rem;
+         width: 100%;
+         background-color: #fff;
+      }
+
+      input[type="submit"]{
+         font-size: 2rem;
+         width: 100%;
+         padding: 1rem;
+         text-align: center;
+         color: #fff;
+         background: var(--dark-blue-text);
+         border-radius: 10px;
+      }
+   }
+}

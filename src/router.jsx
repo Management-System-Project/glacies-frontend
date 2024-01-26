@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NavLink, Outlet } from "react-router-dom";
 import Shop from "./pages/Shop.jsx"
+import Home from "./pages/Home.jsx"
+import RegShop from "./pages/RegShop.jsx"
+import RegUser from "./pages/RegUser.jsx"
 import Layout from "./Layout.jsx";
 
 const home = {
@@ -8,7 +11,7 @@ const home = {
    element: <Layout />,
    children: [
       {
-         element: <>Home</>,
+         element: <Home />,
          index: true
       },
       {
@@ -16,14 +19,16 @@ const home = {
          path: "/shop"
       },
       {
-         element: <>Antoha</>,
-         path: "/registraion"
-      }
+         element: <RegUser/>,
+         path: "/reg-user"
+      },
+      {
+         element: <RegShop/>,
+         path: "/reg-shop"
+      },
    ]
 };
 
-const pages = [{ path: "/oleg", element: <>Oleg</> }];
-
-const Router = createBrowserRouter([home, ...pages]);
+const Router = createBrowserRouter([home]);
 
 export default Router;
