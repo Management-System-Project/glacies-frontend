@@ -1,0 +1,39 @@
+.shop {
+   padding: 1rem 1.25rem;
+
+   section {
+      margin-top: 2rem;
+      border: 1px solid #000;
+      border-radius: 16px;
+      padding: 1.25rem;
+   }
+
+   .hero {
+      display: flex;
+      gap: 1.25rem;
+
+      .title {
+         order: 2;
+      }
+
+      .photo {
+         order: 1;
+      }
+      .menu {
+         margin-left: auto;
+         order: 3;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         row-gap: 0.75rem;
+         column-gap: 2rem;
+         font-size: 2rem;
+
+         & > a {
+            display: block;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 0.5rem 0.75rem;
+         }
+      }
+   }
+}

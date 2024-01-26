@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NavLink, Outlet } from "react-router-dom";
-import {RegForm, RegStore} from "./components/Registraion.jsx";
-
+import Shop from "./pages/Shop.jsx"
 import Layout from "./Layout.jsx";
 
 const home = {
@@ -13,11 +12,11 @@ const home = {
          index: true
       },
       {
-         element: <RegStore/>,
-         path: "/store"
+         element: <Shop />,
+         path: "/shop"
       },
       {
-         element: <RegForm />,
+         element: <>Antoha</>,
          path: "/registraion"
       }
    ]
